@@ -55,12 +55,6 @@ Run the setup command and enter your **Vibepass** when prompted.
 netvibe-cli setup
 ```
 
-This will store your configuration in:
-
-```
-~/.netvibe-cli/config.json
-```
-
 ---
 
 ## 2. Run Test Mode
