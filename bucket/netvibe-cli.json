@@ -1,17 +1,17 @@
 {
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "NetVibe Answerer CLI",
   "homepage": "https://github.com/SNL-UCSB/netvibe",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://raw.githubusercontent.com/Manni-MinM/scoop-netvibe/main/bin/netvibe-cli/v3.3.0/netvibe-cli-windows-amd64.zip",
-      "hash": "b38a69f230e2f20f7e52bb25793fd7fe9b75487bedb9f0dd093c4029d5ac0152",
+      "url": "https://raw.githubusercontent.com/Manni-MinM/scoop-netvibe/main/bin/netvibe-cli/v3.3.1/netvibe-cli-windows-amd64.zip",
+      "hash": "f11a8adc54d1c254f53784d2a5f83da519d4018d1ca62ada24972682b8ac59b6",
       "bin": "netvibe-cli-windows-amd64.exe"
     },
     "arm64": {
-      "url": "https://raw.githubusercontent.com/Manni-MinM/scoop-netvibe/main/bin/netvibe-cli/v3.3.0/netvibe-cli-windows-arm64.zip",
-      "hash": "b363c44db3876955e5f94e1a15a33d52201d673f1a618422554129065d837dfc",
+      "url": "https://raw.githubusercontent.com/Manni-MinM/scoop-netvibe/main/bin/netvibe-cli/v3.3.1/netvibe-cli-windows-arm64.zip",
+      "hash": "8dff291f8540e9709d33d0d60a0fca76152b0e2c0f88ee5c8bfc684b529705d9",
       "bin": "netvibe-cli-windows-arm64.exe"
     }
   }
