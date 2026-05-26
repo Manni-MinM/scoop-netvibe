@@ -1,126 +1,114 @@
-# Install NetVibe CLI on Windows (via Scoop)
+# Install NetVibe CLI on Windows
 
-NetVibe CLI can be installed on Windows using the **Scoop package manager**.
+NetVibe CLI can be installed on Windows using the Scoop package manager.
 
----
+## Prerequisites
 
-# 1. Install Scoop (if not already installed)
-
-Open **PowerShell** and run:
+If Scoop is not installed, open PowerShell and run:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 ```
 
-Verify installation:
+Verify the installation:
 
 ```powershell
 scoop --version
 ```
 
----
+## Add the NetVibe Bucket
 
-# 2. Add the NetVibe Scoop Bucket
+Add the NetVibe Scoop bucket:
 
 ```powershell
 scoop bucket add netvibe https://github.com/Manni-MinM/scoop-netvibe
 ```
 
----
+## Install NetVibe CLI
 
-# 3. Install NetVibe CLI
+Install the latest version:
 
 ```powershell
 scoop install netvibe-cli
 ```
 
----
-
-# 4. Verify Installation
+Verify the installation:
 
 ```powershell
 netvibe-cli --help
 ```
 
----
+## Configure NetVibe CLI
 
-# NetVibe CLI Usage
-
-## 1. Initial Setup (Add Vibepass)
-
-Run the setup command and enter your **Vibepass** when prompted.
+Run the setup command and enter your Vibepass when prompted:
 
 ```powershell
 netvibe-cli setup
 ```
 
----
+Configuration is stored locally and reused for future runs.
 
-## 2. Run Test Mode
+## Run NetVibe CLI
 
-Test mode runs the NetVibe answerer interactively and prints logs to the terminal.
+### Test Mode
+
+Run NetVibe interactively and print logs to the terminal:
 
 ```powershell
 netvibe-cli test
 ```
 
-This is useful for:
+Test mode is useful for:
 
-- debugging connectivity
-- verifying WebRTC connection
+- verifying connectivity
 - validating configuration
+- debugging WebRTC sessions
 
----
+### Daemon Mode
 
-## 3. Run Daemon Mode
-
-Daemon mode runs the NetVibe answerer continuously in the background.
+Run NetVibe continuously in the background:
 
 ```powershell
 netvibe-cli daemon
 ```
 
-Typical usage:
+Typical use cases include:
 
-- long running NetVibe measurement nodes
-- deployment on servers
-- persistent monitoring
+- long running measurement nodes
+- persistent broadband monitoring
+- server deployments
 
----
+## Upgrade NetVibe CLI
 
-# Updating NetVibe CLI
+Update Scoop and upgrade NetVibe CLI:
 
 ```powershell
 scoop update
 scoop update netvibe-cli
 ```
 
----
+## Uninstall NetVibe CLI
 
-# Uninstalling NetVibe CLI
+Remove NetVibe CLI:
 
 ```powershell
 scoop uninstall netvibe-cli
 ```
 
----
+## Installation Location
 
-# Notes
+Scoop installs NetVibe under:
 
-Scoop installs NetVibe to:
-
-```
+```text
 ~/scoop/apps/netvibe-cli/current/
 ```
 
-The binary is automatically added to your **PATH**.
+The executable is automatically added to your PATH.
 
----
+## Troubleshooting
 
-# Troubleshooting
-
-If Scoop commands fail, ensure PowerShell execution policy allows scripts:
+If Scoop commands fail due to PowerShell execution policy restrictions, run:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
